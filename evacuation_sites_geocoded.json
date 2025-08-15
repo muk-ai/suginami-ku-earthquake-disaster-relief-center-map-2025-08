@@ -1,0 +1,921 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "阿佐ヶ谷中学校（震災救援所）",
+        "address": "東京都杉並区阿佐谷南1丁目17番3号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.636032,
+          35.700443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "天沼小学校（震災救援所）",
+        "address": "東京都杉並区天沼2丁目46番3号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.623306,
+          35.710369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "天沼中学校（震災救援所）",
+        "address": "東京都杉並区本天沼3丁目10番20号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.620361,
+          35.712505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "井荻小学校（震災救援所）",
+        "address": "東京都杉並区善福寺1丁目10番19号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.596313,
+          35.712101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "井荻中学校（震災救援所）",
+        "address": "東京都杉並区今川2丁目13番24号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.610886,
+          35.717361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "井草中学校（震災救援所）",
+        "address": "東京都杉並区上井草3丁目20番11号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.602188,
+          35.721413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永福小学校（震災救援所）",
+        "address": "東京都杉並区永福2丁目16番33号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.639862,
+          35.673569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大宮小学校（震災救援所）",
+        "address": "東京都杉並区堀ノ内1丁目12番16号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.648773,
+          35.683456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大宮中学校（震災救援所）",
+        "address": "東京都杉並区堀ノ内1丁目16番38号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.648804,
+          35.68568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "荻窪小学校（震災救援所）",
+        "address": "東京都杉並区宮前2丁目13番18号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.611282,
+          35.695236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "荻窪中学校（震災救援所）",
+        "address": "東京都杉並区善福寺1丁目8番3号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.596359,
+          35.709686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "旧新泉小学校（震災救援所）",
+        "address": "東京都杉並区和泉1丁目44番26号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.656708,
+          35.675533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "旧杉並第四小学校（震災救援所）",
+        "address": "東京都杉並区高円寺北2丁目14番13号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.652985,
+          35.706806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "旧若杉小学校（震災救援所）",
+        "address": "東京都杉並区天沼3丁目15番20号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.618378,
+          35.708981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "久我山小学校（震災救援所）",
+        "address": "東京都杉並区久我山5丁目18番7号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.606003,
+          35.68589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "沓掛小学校（震災救援所）",
+        "address": "東京都杉並区清水3丁目1番9号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.620392,
+          35.715992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高円寺学園（震災救援所）",
+        "address": "東京都杉並区高円寺北1丁目4番11号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.654785,
+          35.706348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高南中学校（震災救援所）",
+        "address": "東京都杉並区和田3丁目40番10号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.657623,
+          35.695606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "向陽中学校（震災救援所）",
+        "address": "東京都杉並区下高井戸3丁目24番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.63472,
+          35.672333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三谷小学校（震災救援所）",
+        "address": "東京都杉並区上井草3丁目14番12号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.601486,
+          35.719826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "四宮小学校（震災救援所）",
+        "address": "東京都杉並区上井草2丁目12番26号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.610535,
+          35.721352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "松庵小学校（震災救援所）",
+        "address": "東京都杉並区松庵2丁目23番24号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.593002,
+          35.700729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "松溪中学校（震災救援所）",
+        "address": "東京都杉並区荻窪2丁目3番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.62291,
+          35.695835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "神明中学校（震災救援所）",
+        "address": "東京都杉並区南荻窪2丁目37番28号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.610336,
+          35.700668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杉並和泉学園（震災救援所）",
+        "address": "東京都杉並区和泉2丁目17番14号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.648163,
+          35.674934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杉並第一小学校（震災救援所）",
+        "address": "東京都杉並区阿佐谷北1丁目5番27号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.637253,
+          35.705578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杉並第九小学校（震災救援所）",
+        "address": "東京都杉並区本天沼1丁目2番19号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.633209,
+          35.71291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杉並第三小学校（震災救援所）",
+        "address": "東京都杉並区高円寺南1丁目15番13号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.656189,
+          35.699902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杉並第七小学校（震災救援所）",
+        "address": "東京都杉並区阿佐谷南3丁目19番2号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.63118,
+          35.702026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杉並第十小学校（震災救援所）",
+        "address": "東京都杉並区和田3丁目55番49号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.657852,
+          35.697144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杉並第二小学校（震災救援所）",
+        "address": "東京都杉並区成田西3丁目4番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.632004,
+          35.692657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杉並第六小学校（震災救援所）",
+        "address": "東京都杉並区阿佐谷南1丁目24番21号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.643661,
+          35.701462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "杉森中学校（震災救援所）",
+        "address": "東京都杉並区阿佐谷北5丁目45番24号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.641022,
+          35.712135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "済美小学校（震災救援所）",
+        "address": "東京都杉並区堀ノ内1丁目17番24号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.649643,
+          35.68594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "泉南中学校（震災救援所）",
+        "address": "東京都杉並区堀ノ内1丁目3番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.656006,
+          35.683929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高井戸小学校（震災救援所）",
+        "address": "東京都杉並区高井戸西2丁目2番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.614853,
+          35.684071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高井戸第三小学校（震災救援所）",
+        "address": "東京都杉並区下高井戸4丁目16番24号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.631348,
+          35.671818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高井戸第四小学校（震災救援所）",
+        "address": "東京都杉並区西荻南1丁目8番16号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.60199,
+          35.698547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高井戸第二小学校（震災救援所）",
+        "address": "東京都杉並区久我山4丁目49番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.599518,
+          35.691517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高井戸中学校（震災救援所）",
+        "address": "東京都杉並区高井戸東1丁目28番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.622894,
+          35.679974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高井戸東小学校（震災救援所）",
+        "address": "東京都杉並区高井戸東1丁目12番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.619858,
+          35.679504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中瀬中学校（震災救援所）",
+        "address": "東京都杉並区下井草4丁目3番29号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.620331,
+          35.718735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西田小学校（震災救援所）",
+        "address": "東京都杉並区荻窪1丁目38番15号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.621353,
+          35.694637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西宮中学校（震災救援所）",
+        "address": "東京都杉並区宮前5丁目1番25号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.601807,
+          35.692722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "八成小学校（震災救援所）",
+        "address": "東京都杉並区井草2丁目25番4号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.619537,
+          35.727657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "浜田山小学校（震災救援所）",
+        "address": "東京都杉並区浜田山4丁目23番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.629303,
+          35.685524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東田小学校（震災救援所）",
+        "address": "東京都杉並区成田東1丁目21番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.638962,
+          35.691303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東田中学校（震災救援所）",
+        "address": "東京都杉並区成田東3丁目19番17号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.634476,
+          35.694511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東原中学校（震災救援所）",
+        "address": "東京都杉並区下井草1丁目28番5号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.630951,
+          35.717056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "富士見丘小学校（震災救援所）",
+        "address": "東京都杉並区久我山2丁目19番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.605118,
+          35.682739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "富士見丘中学校（震災救援所）",
+        "address": "東京都杉並区上高井戸2丁目16番13号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.606506,
+          35.679512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ふらっとすぎはち（震災救援所）",
+        "address": "東京都杉並区高円寺南2丁目40番24号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.650513,
+          35.70129
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "方南小学校（震災救援所）",
+        "address": "東京都杉並区方南1丁目52番14号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.657486,
+          35.678997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "堀之内小学校（震災救援所）",
+        "address": "東京都杉並区堀ノ内3丁目24番11号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.646454,
+          35.693169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "松ノ木小学校（震災救援所）",
+        "address": "東京都杉並区松ノ木1丁目2番26号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.642517,
+          35.687653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "松ノ木中学校（震災救援所）",
+        "address": "東京都杉並区松ノ木1丁目4番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.641632,
+          35.686924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "馬橋小学校（震災救援所）",
+        "address": "東京都杉並区高円寺北4丁目28番5号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.642853,
+          35.708103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "宮前中学校（震災救援所）",
+        "address": "東京都杉並区宮前2丁目12番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.610748,
+          35.692772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桃井第一小学校（震災救援所）",
+        "address": "東京都杉並区桃井2丁目6番1号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.609329,
+          35.711864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桃井第五小学校（震災救援所）",
+        "address": "東京都杉並区下井草4丁目22番4号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.619675,
+          35.721508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桃井第三小学校（震災救援所）",
+        "address": "東京都杉並区西荻北2丁目10番7号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.602112,
+          35.704948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桃井第四小学校（震災救援所）",
+        "address": "東京都杉並区善福寺3丁目3番5号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.594452,
+          35.716465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "桃井第二小学校（震災救援所）",
+        "address": "東京都杉並区荻窪5丁目10番25号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.618179,
+          35.70113
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "和田小学校（震災救援所）",
+        "address": "東京都杉並区和田2丁目30番21号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.657562,
+          35.690556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "和田中学校（震災救援所）",
+        "address": "東京都杉並区和田2丁目21番8号"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.658508,
+          35.689598
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "title": "杉並区震災救援所",
+    "total_sites": 65,
+    "failed_geocoding": 0,
+    "generated_at": "2025-08-15 18:26:50"
+  }
+}

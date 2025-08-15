@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杉並区震災救援所マップ</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        
+        #header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        #header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        
+        #header .subtitle {
+            margin-top: 5px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        #map-container {
+            display: flex;
+            height: calc(100vh - 70px);
+        }
+        
+        #map {
+            flex: 1;
+            height: 100%;
+        }
+        
+        #sidebar {
+            width: 350px;
+            background: #f8f9fa;
+            overflow-y: auto;
+            border-left: 1px solid #dee2e6;
+        }
+        
+        #sidebar h2 {
+            background: #e9ecef;
+            margin: 0;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: 500;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .site-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        
+        .site-item {
+            padding: 12px 20px;
+            border-bottom: 1px solid #dee2e6;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .site-item:hover {
+            background-color: #e9ecef;
+        }
+        
+        .site-item.active {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        .site-name {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        
+        .site-address {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        
+        .leaflet-popup-content {
+            margin: 13px 19px;
+            line-height: 1.5;
+        }
+        
+        .popup-title {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        
+        .popup-address {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        
+        .popup-coords {
+            font-size: 12px;
+            color: #999;
+            font-family: monospace;
+        }
+        
+        #search-box {
+            padding: 15px 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        #search-input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        #search-input:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+        }
+        
+        .stats {
+            padding: 10px 20px;
+            background: #f8f9fa;
+            font-size: 13px;
+            color: #6c757d;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        @media (max-width: 768px) {
+            #sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>杉並区震災救援所マップ</h1>
+        <div class="subtitle">65箇所の震災救援所を表示</div>
+    </div>
+    
+    <div id="map-container">
+        <div id="map"></div>
+        <div id="sidebar">
+            <h2>震災救援所一覧</h2>
+            <div id="search-box">
+                <input type="text" id="search-input" placeholder="施設名で検索...">
+            </div>
+            <div class="stats" id="stats">全65箇所を表示中</div>
+            <ul class="site-list" id="site-list"></ul>
+        </div>
+    </div>
+    
+    <script>
+        // 地図の初期化
+        const map = L.map('map').setView([35.6995, 139.6367], 13);
+        
+        // OpenStreetMapタイルレイヤーを追加
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors',
+            maxZoom: 19
+        }).addTo(map);
+        
+        // マーカーグループ
+        const markersGroup = L.layerGroup().addTo(map);
+        const markers = {};
+        
+        // カスタムアイコン
+        const evacuationIcon = L.divIcon({
+            html: '<div style="background-color: #dc3545; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">避</div>',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -15],
+            className: 'custom-div-icon'
+        });
+        
+        // GeoJSONデータを読み込む
+        fetch('evacuation_sites_geocoded.json')
+            .then(response => response.json())
+            .then(data => {
+                // 施設リストの作成
+                const siteList = document.getElementById('site-list');
+                
+                data.features.forEach((feature, index) => {
+                    const coords = feature.geometry.coordinates;
+                    const props = feature.properties;
+                    
+                    // マーカーを作成
+                    const marker = L.marker([coords[1], coords[0]], {icon: evacuationIcon})
+                        .bindPopup(`
+                            <div class="popup-title">${props.name}</div>
+                            <div class="popup-address">${props.address}</div>
+                            <div class="popup-coords">緯度: ${coords[1].toFixed(6)}, 経度: ${coords[0].toFixed(6)}</div>
+                        `);
+                    
+                    marker.addTo(markersGroup);
+                    markers[index] = marker;
+                    
+                    // サイドバーのリスト項目を作成
+                    const listItem = document.createElement('li');
+                    listItem.className = 'site-item';
+                    listItem.dataset.index = index;
+                    listItem.innerHTML = `
+                        <div class="site-name">${props.name}</div>
+                        <div class="site-address">${props.address}</div>
+                    `;
+                    
+                    // クリックイベント
+                    listItem.addEventListener('click', () => {
+                        // 既存のアクティブ項目を解除
+                        document.querySelectorAll('.site-item').forEach(item => {
+                            item.classList.remove('active');
+                        });
+                        
+                        // 現在の項目をアクティブに
+                        listItem.classList.add('active');
+                        
+                        // 地図を該当マーカーに移動してポップアップを開く
+                        map.setView([coords[1], coords[0]], 16);
+                        marker.openPopup();
+                    });
+                    
+                    siteList.appendChild(listItem);
+                });
+                
+                // 全マーカーが見えるように調整
+                const bounds = L.latLngBounds(
+                    data.features.map(f => [f.geometry.coordinates[1], f.geometry.coordinates[0]])
+                );
+                map.fitBounds(bounds, {padding: [50, 50]});
+            })
+            .catch(error => {
+                console.error('データの読み込みエラー:', error);
+                alert('震災救援所データの読み込みに失敗しました。');
+            });
+        
+        // 検索機能
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const items = document.querySelectorAll('.site-item');
+            let visibleCount = 0;
+            
+            items.forEach(item => {
+                const name = item.querySelector('.site-name').textContent.toLowerCase();
+                const address = item.querySelector('.site-address').textContent.toLowerCase();
+                
+                if (name.includes(searchTerm) || address.includes(searchTerm)) {
+                    item.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            
+            // 統計情報を更新
+            document.getElementById('stats').textContent = 
+                searchTerm ? `${visibleCount}箇所が検索にマッチ` : '全65箇所を表示中';
+        });
+    </script>
+</body>
+</html>
